@@ -1,0 +1,10 @@
+package org.zoolu.gui;
+
+
+
+/** Command bar.
+  */
+public class ZwtCommandBar
+{
+   // to be implemented for JSE.
+}
