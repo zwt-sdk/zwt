@@ -1,6 +1,6 @@
 # ZWT Library
 
-All ZWT source code, including  common classes and specific core classes for Java SE, Java ME, and Android.
+All ZWT resources, including both common and specific source code for Java SE, Java ME, and Android.
 Avaiable folders:
 
 * src-common: all common sources, independent from the used platform.
