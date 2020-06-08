@@ -111,9 +111,7 @@ The same app is also avaliable as [Android Studio RPNCalculator project](https:/
 
 ## Example: Chat
 
-As anothert example of cross-platform app with UI based ZWT you can see [RPNCalculator](https://github.com/zwt-sdk/zwt-calculator). It is a very simple calculator with reverse polish notation (RPN).
-
-The same app is also avaliable as [Android Studio RPNCalculator project](https://github.com/zwt-sdk/zwt-android-calculator).
+Another example of cross-platform app with UI based ZWT is the [Chat](https://github.com/zwt-sdk/zwt-chat), a simle SIP-based instant-messaging app.
 
 
 ## ZWT sources for Androind as Android Studio project
