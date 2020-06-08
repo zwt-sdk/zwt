@@ -116,6 +116,6 @@ As anothert example of cross-platform app with UI based ZWT you can see [RPNCalc
 The same app is also avaliable as [Android Studio RPNCalculator project](https://github.com/zwt-sdk/zwt-android-calculator).
 
 
-## ZWT Android library
+## ZWT sources for Androind as Android Studio project
 
-If you are interested in recompiling the ZWT library implamentation for Android, you can either use the sorce code provide in this repo or use the same sources also available as [Android Studio ZWT project](https://github.com/zwt-sdk/zwt-android).
+If you are interested in recompiling the ZWT library implamentation for Android, you can either use the sorce code provide in this repo or use the same sources available also as [Android Studio ZWT project](https://github.com/zwt-sdk/zwt-android).
