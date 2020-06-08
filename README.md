@@ -39,7 +39,7 @@ Let's go through these steps with a simple *Hello World* app. The resulting app 
 Since the ZWT library resembles other well-known GUI libraries (like Swing and AWT), writing the UI is very simple. Hereafter the code of an app that displays a label "Hello world" and a "Ok" button for exitin is shown:
 
 ```java
-import it.unipr.netsec.zwt.\*;
+import it.unipr.netsec.zwt.*;
 import it.unipr.netsec.zwt.layout.ZwtBorderLayout;
 
 public class Hello {
