@@ -6,9 +6,18 @@ It provides a light set of well-known APIs (like classic Swing and AWT) for rapi
 
 It supports all three main Java environments: Java SE/EE, Java ME Embedded, and Android, and can be used on any system that runs any of these environments.
 
+The ZWT libraries (.jar and .ar), already compiled for the three different environments can be found in [libs]((/lib).
+
+Internally, the ZWT source code is formed by two types of classes (two layers):
+
+* common classes that are implemented independetly from the underlying platforms;
+* core classes that have a different implementation for each platform.
+
+However this differentiation is completely transparent for the users since they see only a set of classes and interfaces forming the ZWT APIs.
+
 <img src="images/zwt-architecture.png" width="50%">
 
-Here you can find all ZWT resources, including both common source code and specific source code for Java SE, Java ME, and Android.
+All source code of ZWT (including both common and specific sources) can be found in the following folders:
 In particular:
 
 * [src-common](/src-common): all ZWT common sources that are independent from the used platform.
@@ -16,12 +25,21 @@ In particular:
 * [src-me](/src-me): ZWT core sources specific for Java ME;
 * [src-android](/src-android): ZWT core sources specific for Android.
 
-In order to show the simplicity of running the same application on different platforms here we report some sample codes used for ran an app on Java SE, Java ME, and Android.
 
-Since the ZWT library resembles other well-known GUI libraries, writing an app with CP UI is very simple. Hereafter, just as very simple example of code of a *Hello World* application, that displays a label "Hello world" and a "Ok" button for exiting, is shown:
+## Getting started
+
+For developing an app with a cross-platform UI, you have only to:
+
+* download the ZWT library (.jar or .ar) for the target platform(s);
+* develop your app using the ZWT library; for example if you are using a PC with Java SE, you can you the corresponding ZWT jar for this phase;
+* develop the the entry class used for starting your app in the target platform(s).
+
+Let's go through these steps with a simple *Hello World* app. The resulting app can be run on Java SE, Java ME, and Android.
+
+Since the ZWT library resembles other well-known GUI libraries (like Swing and AWT), writing the UI is very simple. Hereafter the code of an app that displays a label "Hello world" and a "Ok" button for exitin is shown:
 
 ```java
-import it.unipr.netsec.zwt.*;
+import it.unipr.netsec.zwt.\*;
 import it.unipr.netsec.zwt.layout.ZwtBorderLayout;
 
 public class Hello {
@@ -36,10 +54,12 @@ public class Hello {
 			@Override
 			public void onButtonPushed(ZwtButton arg0) {
 				System.exit(0);
-			}			
+			}
 		};
 		ZwtButton button=new ZwtButton("Ok",ZwtKeyboard.KEY_SELECT,listener);
 		frame.addComponent(button,ZwtBorderLayout.SOUTH);
 	}
 }
 ```
+
+In order to test it on a PC with 
