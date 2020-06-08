@@ -6,7 +6,7 @@ It provides a light set of well-known APIs (like classic Swing and AWT) for rapi
 
 It supports all three main Java environments: Java SE/EE, Java ME Embedded, and Android, and can be used on any system that runs any of these environments.
 
-The ZWT libraries (.jar and .ar), already compiled for the three different environments can be found in [libs]((/lib).
+The ZWT libraries (.jar and .aar), already compiled for the three different environments can be found in [libs](/lib).
 
 Internally, the ZWT source code is formed by two types of classes (two layers):
 
@@ -30,7 +30,7 @@ In particular:
 
 For developing an app with a cross-platform UI, you have only to:
 
-* download the ZWT library (.jar or .ar) for the target platform(s);
+* download the ZWT library (.jar or .aar) for the target platform(s);
 * develop your app using the ZWT library; for example if you are using a PC with Java SE, you can you the corresponding ZWT jar for this phase;
 * develop the the entry class used for starting your app in the target platform(s).
 
