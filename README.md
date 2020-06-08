@@ -11,11 +11,10 @@ It supports all three main Java environments: Java SE/EE, Java ME Embedded, and 
 Here you can find all ZWT resources, including both common source code and specific source code for Java SE, Java ME, and Android.
 In particular:
 
-* src-common: all ZWT common sources that are independent from the used platform.
-* src-se: ZWT core sources specific for Java SE;
-* src-me: ZWT core sources specific for Java ME;
-* src-android: ZWT core sources specific for Android.
-[link](/src-common)
+* [src-common](/src-common): all ZWT common sources that are independent from the used platform.
+* [src-se](/src-se): ZWT core sources specific for Java SE;
+* [src-me](/src-me): ZWT core sources specific for Java ME;
+* [src-android](/src-android): ZWT core sources specific for Android.
 
 In order to show the simplicity of running the same application on different platforms here we report some sample codes used for ran an app on Java SE, Java ME, and Android.
 
