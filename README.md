@@ -6,7 +6,7 @@ It provides a light set of well-known APIs (like classic Swing and AWT) for rapi
 
 It currently supports all three main Java environments: Java SE/EE, Java ME Embedded, and Android, and can be used on any platform that runs any of these environments.
 
-Here youcan find all ZWT resources, including both common and specific source code for Java SE, Java ME, and Android.
+Here you can find all ZWT resources, including both common and specific source code for Java SE, Java ME, and Android.
 Avaiable folders:
 
 * src-common: all common sources, independent from the used platform.
