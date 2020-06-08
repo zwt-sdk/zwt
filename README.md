@@ -4,7 +4,7 @@ ZWT (Zero-change Windows Toolkit) is a cross-platform framework for developing G
 
 It provides a light set of well-known APIs (like classic Swing and AWT) for rapidly developing simple and totally cross-platform applications.
 
-It currently supports all three main Java environments: Java SE/EE, Java ME Embedded, and Android, and can be used on any platform that runs any of these environments.
+It supports all three main Java environments: Java SE/EE, Java ME Embedded, and Android, and can be used on any platform that runs any of these environments.
 
 <img src="images/zwt-architecture.png" width="50%">
 
