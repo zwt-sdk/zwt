@@ -1,6 +1,12 @@
-# ZWT Library
+# ZWT
 
-All ZWT resources, including both common and specific source code for Java SE, Java ME, and Android.
+ZWT (Zero-change Windows Toolkit) is a cross-platform framework for developing GUIs, for any platform that supports the Java language regardless the underlying UI libraries available for accessing to graphical objects (like AWT and Swing for Java SE, MIDP for Java ME, or Android API for Android).
+
+It provides a light set of well-known APIs (like classic Swing and AWT) for rapidly developing simple and totally cross-platform applications.
+
+It currently supports all three main Java environments: Java SE/EE, Java ME Embedded, and Android, and can be used on any platform that runs any of these environments.
+
+Here youcan find all ZWT resources, including both common and specific source code for Java SE, Java ME, and Android.
 Avaiable folders:
 
 * src-common: all common sources, independent from the used platform.
