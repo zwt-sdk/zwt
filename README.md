@@ -111,9 +111,9 @@ The same app is also avaliable as [Android Studio RPNCalculator project](https:/
 
 ## Example: Chat
 
-Another example of cross-platform app with UI based ZWT is the [Chat](https://github.com/zwt-sdk/zwt-chat), a simle SIP-based instant-messaging app.
+Another example of cross-platform app with UI based ZWT is the [Chat](https://github.com/zwt-sdk/zwt-chat), a simple SIP-based instant-messaging app.
 
 
-## ZWT sources for Androind as Android Studio project
+## ZWT sources as Android Studio project
 
-If you are interested in recompiling the ZWT library implamentation for Android, you can either use the sorce code provide in this repo or use the same sources available also as [Android Studio project](https://github.com/zwt-sdk/zwt-android).
+If you are interested in recompiling the ZWT library implamentation for Android, you can either use the source code provide in this repo or use the same sources available also as [Android Studio project](https://github.com/zwt-sdk/zwt-android).
