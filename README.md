@@ -96,7 +96,7 @@ javac -cp zwt-se.jar:. HelloMain.java
 and you can test it with:
 
 ```console
-java -cp zwt-se.jar;. HelloMain
+java -cp zwt-se.jar:. HelloMain
 ```
 
 Replace ':' with ';' in case of Windows OS.
