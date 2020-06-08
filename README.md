@@ -62,4 +62,27 @@ public class Hello {
 }
 ```
 
-In order to test it on a PC with 
+In order to test it on a PC with Java SE (with Swing), you have just to create a main class like the following:
+
+```java
+import javax.swing.JFrame;
+import it.unipr.netsec.zwt.ZwtFrame;
+
+public class HelloMain {
+
+	public static void main(String[] args) {
+		JFrame jframe=new JFrame();
+		ZwtFrame frame=new ZwtFrame(jframe,200,100);
+		new Hello(frame);
+	}
+}
+```
+
+Note that the main class can remain very simple also in case of a large app with complex UI. the main class has just to create a graphical object of the underlying platform (a *JFrame* in case of Java SE) and pass it to the actual platform-independent implementation of the app.
+
+You can test it by running the above code doing:
+
+```console
+local:~$ javac -cp zwt-se.jar Hello.java
+local:~$ java -cp zwt-se.jar Hello
+```
