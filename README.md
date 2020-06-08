@@ -1,20 +1,21 @@
 # ZWT
 
-ZWT (Zero-change Windows Toolkit) is a cross-platform framework for developing GUIs, for any platform that supports the Java language regardless the underlying UI libraries available for accessing graphical objects (like AWT and Swing for Java SE, MIDP for Java ME, or Android API for Android).
+ZWT (Zero-change Windows Toolkit) is a cross-platform framework for developing GUIs, for any system that supports the Java language regardless the underlying UI libraries available for accessing graphical objects (like AWT and Swing for Java SE, MIDP for Java ME, or Android API for Android).
 
 It provides a light set of well-known APIs (like classic Swing and AWT) for rapidly developing simple and totally cross-platform applications.
 
-It supports all three main Java environments: Java SE/EE, Java ME Embedded, and Android, and can be used on any platform that runs any of these environments.
+It supports all three main Java environments: Java SE/EE, Java ME Embedded, and Android, and can be used on any system that runs any of these environments.
 
 <img src="images/zwt-architecture.png" width="50%">
 
-Here you can find all ZWT resources, including both common and specific source code for Java SE, Java ME, and Android.
-Avaiable folders:
+Here you can find all ZWT resources, including both common source code and specific source code for Java SE, Java ME, and Android.
+In particular:
 
-* src-common: all common sources, independent from the used platform.
-* src-se: ZWT core implementation for Java SE;
-* src-me: ZWT core implementation for Java ME;
-* src-android: ZWT core implementation for Android.
+* src-common: all ZWT common sources that are independent from the used platform.
+* src-se: ZWT core sources specific for Java SE;
+* src-me: ZWT core sources specific for Java ME;
+* src-android: ZWT core sources specific for Android.
+[link](/src-common)
 
 In order to show the simplicity of running the same application on different platforms here we report some sample codes used for ran an app on Java SE, Java ME, and Android.
 
