@@ -105,3 +105,5 @@ Replace ':' with ';' in case of Windows OS.
 ## Example: Calculator
 
 As an example of cross-platform app with UI based ZWT you can see [RPNCalculator](https://github.com/zwt-sdk/zwt-calculator). It is a very simple calculator with reverse polish notation (RPN).
+
+The same app is also avaliable as [Android Studio RPNCalculator project](https://github.com/zwt-sdk/zwt-android-calculator).
