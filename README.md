@@ -104,16 +104,16 @@ Replace ':' with ';' in case of Windows OS.
 
 ## Example: Calculator
 
-As an example of cross-platform app with UI based ZWT you can see [RPNCalculator](/zwt-sdk/zwt-calculator). It is a very simple calculator with reverse polish notation (RPN).
+As an example of cross-platform app with UI based ZWT you can see [RPNCalculator](https://github.com/zwt-sdk/zwt-calculator). It is a very simple calculator with reverse polish notation (RPN).
 
-The same app is also avaliable as [Android Studio RPNCalculator project](/zwt-sdk/zwt-android-calculator).
+The same app is also avaliable as [Android Studio RPNCalculator project](https://github.com/zwt-sdk/zwt-android-calculator).
 
 
 ## Example: Chat
 
-Another example of cross-platform app with UI based ZWT is the [Chat](/zwt-sdk/zwt-chat), a simple SIP-based instant-messaging app.
+Another example of cross-platform app with UI based ZWT is the [Chat](https://github.com/zwt-sdk/zwt-chat), a simple SIP-based instant-messaging app.
 
 
 ## ZWT sources as Android Studio project
 
-If you are interested in recompiling the ZWT library implamentation for Android, you can either use the source code provide in this repo or use the same sources available also as [Android Studio project](/zwt-sdk/zwt-android).
+If you are interested in recompiling the ZWT library implamentation for Android, you can either use the source code provide in this repo or use the same sources available also as [Android Studio project](https://github.com/zwt-sdk/zwt-android).
