@@ -12,6 +12,10 @@ import it.unipr.netsec.zwt.ZwtRect;
   */
 public class ZwtTransparentFloor extends ZwtFloor {
 	
+	/** Default opacity */
+	public static float DEFAULT_OPACITY=0.2F;
+	
+	
 	/** Background argb data */
 	int[] backArgbData=null;
 
@@ -19,7 +23,7 @@ public class ZwtTransparentFloor extends ZwtFloor {
 	/** Creates a new floor. */
 	public ZwtTransparentFloor() {
 		super();
-		setOpacity(0.2F);
+		setOpacity(DEFAULT_OPACITY);
 	}
 
 	/** Creates a new floor.

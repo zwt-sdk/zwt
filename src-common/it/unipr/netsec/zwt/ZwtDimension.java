@@ -14,14 +14,14 @@ public class ZwtDimension {
 	private int height;
 
 
-	/** Creates a new dimension.
-	 * @param width the width
-	 * @param height the height */
+	/** Creates a new dimension. */
 	public ZwtDimension() {
 		setDimension(0,0);
 	}
 
-	/** Creates a new dimension. */
+	/** Creates a new dimension.
+	 * @param width the width
+	 * @param height the height */
 	public ZwtDimension(int width, int height) {
 		setDimension(width,height);
 	}
