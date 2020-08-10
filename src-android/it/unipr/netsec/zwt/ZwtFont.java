@@ -127,11 +127,14 @@ public class ZwtFont {
 		return fontPaint.equals(obj);
 	}
 	
-	/** Returns the point size of this Font, rounded to an integer. */
+	/** Returns the font size, rounded to an integer. */
 	public int getSize() {
         return (int) fontPaint.getTextSize();
 	}
-	
+
+	/** Sets the font size. */
+	public void setSize(int size) { fontPaint.setTextSize(size); }
+
 	/** Gets the style of this Font.
 	 * @return the style of this Font */
 	public /*int*/Paint.Style getStyle() {

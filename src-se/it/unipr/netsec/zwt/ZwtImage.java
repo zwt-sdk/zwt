@@ -28,7 +28,7 @@ public class ZwtImage extends ZwtComponent {
 
 	/** Creates a new image.
 	 * @param img the image */
-	protected ZwtImage(ZwtImage img) {
+	public ZwtImage(ZwtImage img) {
 		setImage(img.image);
 	}
 
@@ -95,7 +95,7 @@ public class ZwtImage extends ZwtComponent {
 	 * @param width the width of the scaled image
 	 * @param height the height of the scaled image */
 	public void scaleImage(int width, int height) {
-		image=image.getScaledInstance(width, height, Image.SCALE_SMOOTH);
+		setImage(image.getScaledInstance(width, height, Image.SCALE_SMOOTH));
 	}
 
 	@Override

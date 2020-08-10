@@ -54,7 +54,7 @@ public class ZwtImage extends ZwtComponent {
 
 	/** Creates a new ZwtImage.
 	 * @param img the image */
-	protected ZwtImage(ZwtImage img) {
+	public ZwtImage(ZwtImage img) {
 		setImage(img.image);
 	}
 
@@ -88,6 +88,7 @@ public class ZwtImage extends ZwtComponent {
 	 * @param height the height of the scaled image */
 	public void scaleImage(int width, int height) {
 		// TODO
+		//setImage(newImage);
 	}
 
     /** From ZwtComponent. Renders the component at a specific position. */

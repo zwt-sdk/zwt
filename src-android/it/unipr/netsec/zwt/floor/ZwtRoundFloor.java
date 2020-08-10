@@ -11,10 +11,17 @@ import it.unipr.netsec.zwt.ZwtRect;
 public class ZwtRoundFloor extends ZwtTransparentFloor {
 	
 	/** Round width */
-	int roundWidth=20;
+	public static int ROUND_WIDTH=20;
 
 	/** Round height */
-	int roundHeight=20;
+	public static int ROUND_HEIGHT=20;
+
+	
+	/** Round width */
+	int roundWidth=ROUND_WIDTH;
+
+	/** Round height */
+	int roundHeight=ROUND_HEIGHT;
 
 
 
@@ -23,36 +30,51 @@ public class ZwtRoundFloor extends ZwtTransparentFloor {
 		super();
 	}
 
-	/** Creates a new floor. */
+	/** Creates a new floor.
+	 * @param roundWidth round width
+	 * @param roundHeight round height
+	 * @param opacity floor opacity */
+	public ZwtRoundFloor(int roundWidth, int roundHeight, float opacity) {
+		super(opacity);
+		setRoundness(roundWidth,roundHeight);
+	}
+
+	/** Creates a new floor.
+	 * @param roundWidth round width
+	 * @param roundHeight round height */
 	public ZwtRoundFloor(int roundWidth, int roundHeight) {
 		super();
-		this.setRoundness(roundWidth,roundHeight);
+		setRoundness(roundWidth,roundHeight);
 	}
 
-	/** Creates a new floor. */
+	/** Creates a new floor.
+	 * @param roundness round width and height */
 	public ZwtRoundFloor(int roundness) {
 		super();
-		this.setRoundness(roundness);
+		setRoundness(roundness);
 	}
 
-	/** Sets roundness. */
+	/** Sets roundness.
+	 * @param roundWidth round width
+	 * @param roundHeight round height */
 	public void setRoundness(int roundWidth, int roundHeight) {
 		this.roundWidth=roundWidth;
 		this.roundHeight=roundHeight;
 	}
 
-	/** Sets roundness. */
+	/** Sets roundness.
+	 * @param roundness round width and height */
 	public void setRoundness(int roundness) {
 		setRoundness(roundness,roundness);
 	}
 
 	/** Gets round width. */
-	public int getRoundWidth(int roundWidth) {
+	public int getRoundWidth() {
 		return roundWidth;
 	}
 
 	/** Gets round height. */
-	public int getRoundHeight(int roundHeight) {
+	public int getRoundHeight() {
 		return roundHeight;
 	}
 
@@ -69,15 +91,15 @@ public class ZwtRoundFloor extends ZwtTransparentFloor {
 			return;
 		}
 		// else
-		if (alpha0>=1) {
+		float rx=(float)roundWidth/2;
+		float ry=(float)roundHeight/2;
+		if (alpha0>=1 && rx==0 && ry==0) {
 			g.setColor(color);
 			g.fillRect(x,y,width,height);
 			return;
 		}
 		// else
 		int[] argbData=new int[width*height];
-		float rx=(float)roundWidth/2;
-		float ry=(float)roundHeight/2;
 		for (int i=0; i<width; i++) {
 			for (int j=0; j<height; j++) {
 				boolean paint=false;

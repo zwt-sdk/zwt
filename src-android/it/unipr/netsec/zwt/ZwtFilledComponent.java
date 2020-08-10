@@ -111,7 +111,7 @@ public abstract class ZwtFilledComponent extends ZwtComponent {
 			ZwtColor colorSaved=g.getColor();
 			if (floor!=null) floor.draw(g,x,y,width,height,area);
 			if (border!=null) border.draw(g,x,y,width,height,area);
-			g.setColor(colorSaved);			
+			g.setColor(colorSaved);
 		}
 	}
 

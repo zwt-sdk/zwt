@@ -2,7 +2,7 @@ package it.unipr.netsec.zwt;
 
 
 
-/** A drawable object must implement the method {@link ZwtDrawable#draw(ZwtGraphics, int, int, int, int)}.
+/** A drawable object must implement the method {@link ZwtDrawable#draw(ZwtGraphics, int, int, int, int, ZwtRect)}.
   */
 public interface ZwtDrawable {
 	

@@ -8,6 +8,9 @@ public class ZwtButton extends ZwtLabel {
 	
 	/** Button listener */
 	ZwtButtonListener listener;
+	
+	/** Icon */
+	ZwtImage icon;
 
 	/** Key code */
 	//int keyCode;
@@ -38,6 +41,15 @@ public class ZwtButton extends ZwtLabel {
 		//border.setThickness(ZwtContext.DEFAULT_BORDER_THICKNESS);
 	}
 
+	/** Creates a new ZwtButton.
+	  * @param icon Icon of the button
+	  * @param keyCode Key code associated with this button
+	  * @param listener Button listener */
+	public ZwtButton(ZwtImage icon, int keyCode, ZwtButtonListener listener) {
+		this("",new int[]{keyCode},listener);
+		this.icon=icon;
+	}
+	
 	@Override
 	public int keyPressed(int keyCode) {
 		if (keyCodes==null) return keyCode;
@@ -104,6 +116,12 @@ public class ZwtButton extends ZwtLabel {
 	protected void drawLabelText(ZwtGraphics g, int x, int y, ZwtRect rect) {
 		int x0=(pressed)? x : x-1;
 		int y0=(pressed)? y : y-1;
+		if (icon!=null) {
+			int width=Math.min(icon.getWidth(),getWidth());
+			int height=Math.min(icon.getHeight(),getHeight());
+			if (width<icon.getWidth() || height<icon.getHeight()) icon.scaleImage(width,height);
+			g.drawImage(icon,x0,y0);
+		}
 		super.drawLabelText(g,x0,y0,rect);
 	}
 

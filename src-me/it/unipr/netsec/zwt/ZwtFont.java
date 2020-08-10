@@ -157,6 +157,11 @@ public class ZwtFont {
 		return font.getSize();
 	}
 	
+	/** Sets the size of the font. */
+	public void setSize(int size) {
+		// TODO
+	}
+	
 	/** Gets the style of the font. */
 	public int getStyle() {
 		return font.getStyle();

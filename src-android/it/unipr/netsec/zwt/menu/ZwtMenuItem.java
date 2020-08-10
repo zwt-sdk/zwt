@@ -29,7 +29,7 @@ package it.unipr.netsec.zwt.menu;
 /** A menu item.
   * It may correspond to an action or a sub-menu.
   * In the former case the menu item is created with a {@link ZwtMenuItemListener menu item listener};
-  * when the menu is selected the corresponding {@link ZwtMenuItemListener#onMenuItemSelected(ZMenuItem item)})
+  * when the menu is selected the corresponding {@link ZwtMenuItemListener#onMenuItemSelected(ZwtMenuItem item)})
   * method is called.
   * Instead, in the latter case the menu item is created with inner {@link ZwtMenu sub-menu}.
   */

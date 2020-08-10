@@ -11,17 +11,34 @@ import it.unipr.netsec.zwt.ZwtRect;
   */
 public class ZwtRoundBorder extends ZwtBorder {
 	
+	/** Default round width */
+	public static int DEFAULT_ROUND_WIDTH=20;
+
+	/** Default round height */
+	public static int DEFAULT_ROUND_HEIGHT=20;
+
+	
 	/** Round width */
-	int roundWidth=20;
+	int roundWidth;
 
 	/** Round height */
-	int roundHeight=20;
+	int roundHeight;
 
 
 
 	/** Creates a new border. */
 	public ZwtRoundBorder() {
-		
+		this(DEFAULT_ROUND_WIDTH,DEFAULT_ROUND_HEIGHT);
+	}
+
+	/** Creates a new border. */
+	public ZwtRoundBorder(int roundness) {
+		this(roundness,roundness);
+	}
+
+	/** Creates a new border. */
+	public ZwtRoundBorder(int roundWidth, int roundHeight) {
+		setRoundness(roundWidth,roundHeight);
 	}
 
 	/** Sets roundness. */

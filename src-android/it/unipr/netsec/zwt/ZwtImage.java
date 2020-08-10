@@ -4,20 +4,25 @@ import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 
+import java.io.IOException;
+
 public class ZwtImage extends ZwtComponent {
 
-    /** The image */
+	/** The image */
     protected Bitmap image;
 
     /** Creates a new ZwtImage.
      * @param path the path of the selected image */
-    public ZwtImage(String path) {
-        image = BitmapFactory.decodeFile(path);
+    public ZwtImage(String path) throws IOException {
+        try {
+			setImage(BitmapFactory.decodeFile(path));
+		}
+		catch (RuntimeException e) { throw new IOException(e); }
     }
 
 	/** Creates a new image.
 	 * @param img the image */
-	protected ZwtImage(ZwtImage img) {
+	public ZwtImage(ZwtImage img) {
 		setImage(img.image);
 	}
 
@@ -25,14 +30,14 @@ public class ZwtImage extends ZwtComponent {
      * @param resources the res folder of the selected image
      * @param id the id of the selected image */
     public ZwtImage(Resources resources, int id) {
-        image = BitmapFactory.decodeResource(resources, id);
-    }
+		setImage(BitmapFactory.decodeResource(resources, id));
+	}
 
     /** Creates a new ZwtImage.
      * @param image the selected image */
     public ZwtImage(Bitmap image) {
-        this.image = image;
-    }
+		setImage(image);
+	}
 
     /** Creates a new ZwtImage.
      * @param image the selected image
@@ -41,8 +46,8 @@ public class ZwtImage extends ZwtComponent {
      * @param width the width of the cropped image
      * @param height the height of the cropped image */
     public ZwtImage(Bitmap image, int x, int y, int width, int height) {
-        this.image = Bitmap.createBitmap(image, x, y, width, height);
-    }
+		setImage(Bitmap.createBitmap(image, x, y, width, height));
+	}
 
     /** Crops the image.
      * @param x the left coordinate of the cropped image
@@ -50,35 +55,37 @@ public class ZwtImage extends ZwtComponent {
      * @param width the width of the cropped image
      * @param height the height of the cropped image */
     public void cropImage(int x, int y, int width, int height) {
-        image = Bitmap.createBitmap(image, x, y, width, height);
-    }
+		setImage(Bitmap.createBitmap(image, x, y, width, height));
+	}
 
     /** Scale the image.
      * @param width the width of the scaled image
      * @param height the height of the scaled image
      */
     public void scaleImage(int width, int height) {
-        image = Bitmap.createScaledBitmap(image, width, height, false);
-    }
+		setImage(Bitmap.createScaledBitmap(image, width, height, false));
+	}
 
     /** Sets a new ZwtImage.
      * @param path the path of the selected image */
     public void setImage(String path) {
-        image = BitmapFactory.decodeFile(path);
-    }
+    	setImage(BitmapFactory.decodeFile(path));
+  }
 
     /** Sets a new ZwtImage.
      * @param resources the res folder of the selected image
      * @param id the id of the selected image */
     public void setImage(Resources resources, int id) {
-        image = BitmapFactory.decodeResource(resources, id);
-    }
+        setImage(BitmapFactory.decodeResource(resources, id));
+	}
 
     /** Sets a new image.
      * @param image the selected image */
     public void setImage(Bitmap image) {
-        this.image = image;
-    }
+    	this.image = image;
+		this.width = image.getWidth();
+		this.height = image.getHeight();
+	}
 
     /** Sets a new image.
      * @param image the selected image
@@ -87,8 +94,8 @@ public class ZwtImage extends ZwtComponent {
      * @param width the width of the cropped image
      * @param height the height of the cropped image */
     public void setImage(Bitmap image, int x, int y, int width, int height) {
-        this.image = Bitmap.createBitmap(image, x, y, width, height);
-    }
+        setImage(Bitmap.createBitmap(image, x, y, width, height));
+	}
 
     /** Gets the image */
     public Bitmap getImage() {
